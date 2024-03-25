@@ -43,10 +43,10 @@ def main():
 
             # Try to parse the user_input to int
             List = roll_dice(int(user_input))
-            print(str(List)[1:-1])
-            print("Average of your draw: ",round(np.average(List),2))
-            print("Median of your draw: ", np.median(List))
-            print("Most common value of your draw: ", most_frequent(List))
+            print(*List)
+            print("Average of your draw:",round(np.average(List),2))
+            print("Median of your draw:", np.median(List))
+            print("Most common value of your draw:", most_frequent(List))
         except ValueError:
             print('(Please enter a valid number)')
 
